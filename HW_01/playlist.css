@@ -15,12 +15,21 @@ table {
     border-collapse: collapse;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    table-layout: fixed;
 }
 
 th,
 td {
     border: 1px solid #ddd;
     padding: 10px;
+}
+
+.Rows:hover{
+    background: lightblue;
+    font-size: large;
+    font-weight: bold;
+    color: darkblue;
+    
 }
 
 th {
@@ -31,4 +40,9 @@ th {
 img {
     width: 120px;
     border-radius: 5px;
+}
+
+.Titles{
+    background: #0078d7;
+    color: white;
 }
