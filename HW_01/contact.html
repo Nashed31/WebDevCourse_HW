@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="contact.css">
+  <script>
+    function sendMessage() {
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const phone = document.getElementById("phone").value;
+      const subject = document.getElementById("subject").value;
+      const message = document.getElementById("message").value;
+
+      alert(`Message sent!\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nSubject: ${subject}\nMessage: ${message}`);
+    }
+  </script>
+</head>
+<body>
+  <div class="contact-container">
+    <h2>Contact</h2>
+    <form onsubmit="event.preventDefault(); sendMessage();">
+      <table>
+        <tr>
+          <th colspan="2" class="form-header">Send a Message</th>
+        </tr>
+        <tr>
+          <td>Name:</td>
+          <td><input type="text" id="name" placeholder="Enter your name"></td>
+        </tr>
+        <tr>
+          <td>Email:</td>
+          <td><input type="email" id="email" placeholder="Enter your email"></td>
+        </tr>
+        <tr>
+          <td>Phone:</td>
+          <td><input type="tel" id="phone" placeholder="Enter your phone"></td>
+        </tr>
+        <tr>
+          <td>Subject:</td>
+          <td><input type="text" id="subject" placeholder="Subject"></td>
+        </tr>
+        <tr>
+          <td>Message:</td>
+          <td><textarea id="message" rows="4" placeholder="Write your message..."></textarea></td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align:center;">
+            <input type="submit" value="Send Message" class="btn">
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</body>
+</html>

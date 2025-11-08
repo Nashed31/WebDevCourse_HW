@@ -1,0 +1,90 @@
+body {
+  font-family:sans-serif;
+  background: linear-gradient(135deg, #a4c8f1, #b5f6f3);
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container {
+  background: #ffffffdd;
+  padding: 40px 50px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  max-width: 500px;
+  width: 100%;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.contact-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 25px;
+  margin-top: 0px;
+  letter-spacing: 1px;
+  font-size: 40px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th.form-header {
+  font-size: 1.5em;
+  color: #fff;
+  background: linear-gradient(90deg, #4a90e2, #50c9c3);
+  padding: 15px;
+  border-radius: 12px 12px 0 0;
+}
+
+td {
+  padding: 12px;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.3em;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+  border-color: #4a90e2;
+  background-color: #fff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(74, 144, 226, 0.4);
+}
+
+.btn {
+  background: linear-gradient(90deg, #4a90e2, #50c9c3);
+  color: white;
+  font-weight: bold;
+  font-size: 1.02em;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 0 0 12px 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: linear-gradient(90deg, #50c9c3, #4a90e2);
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
