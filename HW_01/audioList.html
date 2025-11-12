@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audio List</title>
+  <link rel="stylesheet" href="audioList.css">
+</head>
+
+<body>
+  <h2>My Audio List</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Cover</th>
+        <th>Title</th>
+        <th>Artist</th>
+        <th>Year</th>
+        <th>Play</th>
+        <th>Download</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr>
+        <td><img src="Data/imagine.jpeg" alt="Imagine cover" class="cover"></td>
+        <td>Imagine</td>
+        <td>John Lennon</td>
+        <td>1971</td>
+        <td>
+          <audio controls controlsList="nodownload">
+            <source src="Data/imagine.mp3" type="audio/mpeg">
+          </audio>
+        </td>
+        <td><a href="Data/imagine.mp3" download class="download">Download</a></td>
+      </tr>
+
+
+      <tr>
+        <td><img src="Data/bohemian.jpg" alt="Bohemian Rhapsody cover" class="cover"></td>
+        <td>Bohemian Rhapsody</td>
+        <td>Queen</td>
+        <td>1975</td>
+        <td>
+          <audio controls controlsList="nodownload">
+            <source src="Data/bohemian.mp3" type="audio/mpeg">
+          </audio>
+        </td>
+        <td><a href="Data/bohemian.mp3" download class="download">Download</a></td>
+      </tr>
+
+      <tr>
+        <td><img src="Data/kush.jpeg" alt="Kush" class="cover"></td>
+        <td>Kush</td>
+        <td>Dr. Dre featuring Snoop Dogg and Akon</td>
+        <td>2010</td>
+        <td>
+          <audio controls controlsList="nodownload">
+            <source src="Data/kush.mp3" type="audio/mpeg">
+          </audio>
+        </td>
+        <td><a href="Data/kush.mp3" download class="download">Download</a></td>
+      </tr>
+
+    </tbody>
+  </table>
+</body>
+
+</html>
